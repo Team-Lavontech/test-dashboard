@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Set the background color as needed */
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
