@@ -16,7 +16,7 @@ const Navbar = ( {toggleSidebar, isSidebarOpen} ) => {
 
   return (
     <nav className={`fixed top-0 ${isSidebarOpen ? 'lg:left-64 sm:left-0' : 'left-0'}  right-0 ${mode === 'dark' ? 'bg-dark-background text-white' : 'bg-background text-black'} p-4 flex justify-between`}>
-      <div className="flex items-center gap-10">
+      <div className="flex items-center gap-10 pl-5">
         <button type="button" onClick={toggleSidebar} ><GiHamburgerMenu className="w-4 h-4 text-gray-500 dark:text-gray-100"  /></button>
         <form className="max-w-2xl mx-auto">
           <div className="flex">
