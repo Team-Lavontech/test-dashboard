@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
             <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>
             <div className={`flex flex-col w-full transition duration-300 ease-in-out`}>
                 <Navbar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-                <div className={`fixed top-10 ${isSidebarOpen ? 'lg:left-64 sm:left-0' : 'left-0'} right-0`}>
+                <div className={`fixed top-10 ${isSidebarOpen ? 'lg:left-72 sm:left-0' : 'left-0'} right-0`}>
                     {children}
                 </div>
             </div>

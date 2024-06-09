@@ -30,7 +30,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
   ];
 
   return (
-    <div className={`bg-sidebar-bg dark:bg-secondary-dark-background h-screen fixed top-0 bottom-0 left-0 overflow-y-auto z-50 transform transition-transform duration-300 ${isSidebarOpen ? 'translate-x-0 w-64' : '-translate-x-full'}`}>
+    <div className={`bg-sidebar-bg dark:bg-secondary-dark-background h-screen fixed top-0 bottom-0 left-0 overflow-y-auto z-50 transform transition-transform duration-300 ${isSidebarOpen ? 'translate-x-0 w-72' : '-translate-x-full'}`}>
       <div className="flex justify-between items-center pl-10 pt-5 pb-10">
         <h1 className="text-xl font-bold text-title dark:text-dark-title">LAVONTECH</h1>
         <button onClick={closeSidebar} className="block lg:hidden text-gray-600 dark:text-gray-300 mr-5 border-none w-6 h-6 p-1 hover:bg-background dark:hover:bg-dark-background">
@@ -40,7 +40,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
       <ul>
         {menuItems.map((item, index) => (
           item.section ? (
-            <h2 key={index} className="text-sm text-left pl-10 pt-5 pb-5 text-title dark:text-dark-title">{item.section}</h2>
+            <h2 key={index} className="text-sm text-left pl-10 pt-8 pb-5 text-title dark:text-dark-title">{item.section}</h2>
           ) : (
             <li key={index} className="hover:bg-hover-bg dark:hover:bg-dark-hover-bg">
               <NavLink
@@ -53,7 +53,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 {({ isActive }) => (
                   <>
                     <span className={`icon m-1 ${isActive ? 'text-sidebar-link dark:text-sidebar-link' : 'text-sidebar-link dark:text-dark-sidebar-link'}`}>{item.icon}</span>
-                    <span className={`pl-6 ${isActive ? 'text-sidebar-link dark:text-sidebar-link' : 'text-sidebar-link dark:text-dark-sidebar-link'}`}>
+                    <span className={`pl-10 ${isActive ? 'text-sidebar-link dark:text-sidebar-link' : 'text-sidebar-link dark:text-dark-sidebar-link'}`}>
                       {item.name}
                     </span>
                   </>
