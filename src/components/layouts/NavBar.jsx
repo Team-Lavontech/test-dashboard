@@ -21,7 +21,7 @@ const Navbar = ( {toggleSidebar, isSidebarOpen} ) => {
         <form className="max-w-2xl mx-auto">
           <div className="flex">
             <div className="relative w-full">
-              <input type="search" id="location-search" className="block p-2.5 w-full z-20 text-sm bg-gray-200 dark:bg-secondary-dark-background dark:placeholder-gray-400 rounded-md focus:outline-none" placeholder="Search..." required />
+              <input type="search" id="location-search" className="block p-2.5 w-full z-20 text-sm bg-sidebar-bg dark:bg-secondary-dark-background dark:placeholder-gray-400 rounded-md focus:outline-none" placeholder="Search..." required />
               <button type="submit" className="absolute top-0 end-0 h-full p-2.5">
                 <IoMdSearch className="w-4 h-4 text-gray-500 dark:text-gray-100" />
               </button>
