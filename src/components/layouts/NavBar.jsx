@@ -15,13 +15,13 @@ const Navbar = ( {toggleSidebar, isSidebarOpen} ) => {
   };
 
   return (
-    <nav className={`fixed top-0 ${isSidebarOpen ? 'lg:left-64 sm:left-0' : 'left-0'}  right-0 ${mode === 'dark' ? 'bg-dark-background text-white' : 'bg-background text-black'} p-4 flex justify-between`}>
-      <div className="flex items-center gap-10">
+    <nav className={`fixed top-0 ${isSidebarOpen ? 'lg:left-72 sm:left-0' : 'left-0'}  right-0 ${mode === 'dark' ? 'bg-dark-background text-white' : 'bg-background text-black'} p-4 flex justify-between`}>
+      <div className="flex items-center gap-10 pl-5">
         <button type="button" onClick={toggleSidebar} ><GiHamburgerMenu className="w-4 h-4 text-gray-500 dark:text-gray-100"  /></button>
         <form className="max-w-2xl mx-auto">
           <div className="flex">
             <div className="relative w-full">
-              <input type="search" id="location-search" className="block p-2.5 w-full z-20 text-sm bg-gray-200 dark:bg-secondary-dark-background dark:placeholder-gray-400 rounded-md focus:outline-none" placeholder="Search..." required />
+              <input type="search" id="location-search" className="block p-2.5 w-full z-20 text-sm bg-sidebar-bg dark:bg-secondary-dark-background dark:placeholder-gray-400 rounded-md focus:outline-none" placeholder="Search..." required />
               <button type="submit" className="absolute top-0 end-0 h-full p-2.5">
                 <IoMdSearch className="w-4 h-4 text-gray-500 dark:text-gray-100" />
               </button>
